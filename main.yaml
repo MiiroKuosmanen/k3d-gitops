@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: lovelace12b
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://github.com/MiiroKuosmanen/lovelace12b
+  ref:
+    branch: master
